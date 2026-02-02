@@ -1,0 +1,37 @@
+<!-- views/question.ejs -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+        <title>Saint Valentin</title>
+    </head>
+
+    <body>
+
+        <div>
+            <img src="/images/love_dog.jpg"/><br>
+        </div>
+
+        <h1>Veux-tu être ma Valentine ? </h1>
+        <div class="question">
+            <form method="POST" action="/yes"> 
+                <button type="submit" class="button">Oui</button>
+                <button type="button" class="button" id="btnNon">Non</button>
+            </form>
+        </div>
+        <script>
+            document.getElementById('btnNon').addEventListener('click', function() {
+            this.style.display = 'none';
+            });
+        </script>
+       
+
+    </body>
+</html>
+
